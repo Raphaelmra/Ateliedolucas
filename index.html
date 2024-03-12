@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Ateliê da Manalu</title>
+    <title>MANALOOKZ </title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,17 +57,77 @@ https://templatemo.com/tm-569-edu-meeting
                       <nav class="main-nav">
                           <!-- ***** Logo Start ***** -->
                           <a href="index.html" class="logo">
-                               Ateliê da Manalu
+                               MANALOOKZ 
                           </a>
                           <!-- ***** Logo End ***** -->
                           <!-- ***** Menu Start ***** -->
                           <ul class="nav">
                               <li class="scroll-to-section"><a href="#top" class="active">Início</a></li>
 
+
+
+                              <style>
+#abrir-popup:checked ~ #conteudo {
+  display: block;
+}
+#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
+  display: none;
+}
+
+#abrir-popup-btn {
+    border:none!important;
+       outline: none;
+
+  display: block;
+  color: white;
+  width: fit-content;
+  padding: 12px 34px;
+  cursor: pointer;
+}
+#fechar-popup-btn {
+        outline: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#conteudo {
+      color: white;
+
+  box-sizing: border-box;
+  position: fixed;
+  width: min(380px, 90vw);
+  height: 160px;
+  left: max(calc(50vw - 380px / 2), 4vw);
+  top: calc(50vh - 80px);
+  
+  padding: 22px;
+  background-color: #a12c2f;
+  border: 2px solid #c59fde;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px -5px #0000003c;
+}
+</style>
+
+<input id="abrir-popup" name="popup" type="radio" hidden>
+<input id="fechar-popup" name="popup" type="radio" hidden checked>
+
+<label id="abrir-popup-btn" for="abrir-popup">Abrir</label>
+<label id="fechar-popup-btn" for="fechar-popup">Fechar</label>
+
+<div id="conteudo">
+  <p>As peças à venda estarão disponíveis em breve</p>
+</div>
+
+
+
                              
 
-                              <li class="scroll-to-section"><a href="#courses">Principais peças desenvolvidas</a></li>
-                              <li><a href="meetings.html">Catálogo</a></li> 
+                              <li class="scroll-to-section"><a href="#courses">À Venda</a></li>
+                              <li><a href="meetings.html">Portfólio</a></li> 
                               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
 
                             
